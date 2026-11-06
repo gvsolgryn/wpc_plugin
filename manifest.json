@@ -1,0 +1,41 @@
+{
+  "manifest_version": 3,
+  "name": "WPC 보관목록 저장·복사",
+  "short_name": "WPC 저장·복사",
+  "description": "WPC 보관목록을 Excel, CSV 파일로 저장하거나 Google 스프레드시트에 붙여넣을 수 있게 복사합니다.",
+  "version": "1.0.0",
+  "permissions": [
+    "clipboardWrite"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://wpc.mobis.com/*"
+      ],
+      "js": [
+        "vendor/xlsx.full.min.js",
+        "export.js",
+        "content.js"
+      ],
+      "css": [
+        "styles.css"
+      ],
+      "run_at": "document_idle"
+    }
+  ],
+  "action": {
+    "default_title": "WPC 보관목록에서 저장·복사 메뉴를 사용하세요",
+    "default_icon": {
+      "16": "icons/icon-16.png",
+      "32": "icons/icon-32.png",
+      "48": "icons/icon-48.png",
+      "128": "icons/icon-128.png"
+    }
+  },
+  "icons": {
+    "16": "icons/icon-16.png",
+    "32": "icons/icon-32.png",
+    "48": "icons/icon-48.png",
+    "128": "icons/icon-128.png"
+  }
+}

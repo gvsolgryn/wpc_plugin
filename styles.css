@@ -1,0 +1,126 @@
+.wpc-cart-export {
+  position: relative;
+  display: inline-block;
+  margin-left: 8px;
+  vertical-align: middle;
+  font-family: inherit;
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+.wpc-cart-export__details {
+  position: relative;
+  display: inline-block;
+}
+
+.wpc-cart-export__summary {
+  all: unset;
+  box-sizing: border-box;
+  display: inline-block;
+  padding: 6px 11px;
+  border: 1px solid #176b87;
+  border-radius: 4px;
+  background: #176b87;
+  color: #fff;
+  font-family: inherit;
+  font-size: 13px;
+  line-height: 1.4;
+  cursor: pointer;
+  user-select: none;
+}
+
+.wpc-cart-export__summary::-webkit-details-marker {
+  display: none;
+}
+
+.wpc-cart-export__summary::after {
+  content: '▾';
+  display: inline-block;
+  margin-left: 5px;
+  font-size: 16px;
+  line-height: 1;
+  vertical-align: 1px;
+}
+
+.wpc-cart-export__summary:hover,
+.wpc-cart-export__details[open] > .wpc-cart-export__summary {
+  background: #105469;
+}
+
+.wpc-cart-export__summary:focus-visible {
+  outline: 2px solid #0b84d8;
+  outline-offset: 2px;
+}
+
+.wpc-cart-export__menu {
+  position: absolute;
+  z-index: 10000;
+  top: calc(100% + 5px);
+  right: 0;
+  box-sizing: border-box;
+  width: 220px;
+  padding: 5px;
+  border: 1px solid #ccd3d8;
+  border-radius: 5px;
+  background: #fff;
+  box-shadow: 0 4px 16px rgb(0 0 0 / 18%);
+}
+
+.wpc-cart-export__menu button {
+  all: unset;
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  margin: 0 !important;
+  padding: 9px 10px !important;
+  border-radius: 3px;
+  color: #222;
+  font-family: inherit;
+  font-size: 13px;
+  line-height: 1.4;
+  text-align: left;
+  text-indent: 0 !important;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.wpc-cart-export__menu button:hover,
+.wpc-cart-export__menu button:focus-visible {
+  background: #eaf4f8;
+  color: #105469;
+  outline: none;
+}
+
+.wpc-cart-export__menu button:disabled {
+  opacity: 0.55;
+  cursor: wait;
+}
+
+.wpc-cart-export__status {
+  position: absolute;
+  z-index: 9999;
+  top: calc(100% + 6px);
+  right: 0;
+  box-sizing: border-box;
+  width: max-content;
+  max-width: 280px;
+  padding: 6px 9px;
+  border: 1px solid #b8d7ca;
+  border-radius: 4px;
+  background: #f2fbf6;
+  color: #185c38;
+  font-size: 12px;
+  white-space: nowrap;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 10%);
+}
+
+.wpc-cart-export__status:empty {
+  display: none;
+}
+
+.wpc-cart-export__status--error {
+  border-color: #e3b6b6;
+  background: #fff5f5;
+  color: #a02121;
+  white-space: normal;
+}

@@ -1,0 +1,14 @@
+# Normalize source and documentation line endings.
+* text=auto eol=lf
+
+# Keep image and packaged-extension bytes unchanged.
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.zip binary
+*.crx binary
+
+# Preserve the upstream minified bundle exactly and suppress noisy diffs.
+vendor/*.min.js -text -diff

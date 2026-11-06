@@ -1,0 +1,27 @@
+# OS-generated files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Editor settings
+.vscode/
+.idea/
+
+# Logs and temporary test files
+*.log
+.smoke/
+tmp/
+temp/
+
+# Optional future JavaScript tooling
+node_modules/
+
+# Build and distribution artifacts
+dist/
+release/
+*.zip
+*.crx
+
+# Private signing keys — never commit these
+*.pem
+*.key
